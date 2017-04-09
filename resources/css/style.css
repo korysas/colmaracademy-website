@@ -16,6 +16,14 @@ nav {
   margin-left: 20px;
 }
 
+.logo span {
+  font-family: sans-serif;
+}
+
+.colmar {
+  font-weight: bold;
+}
+
 nav .nav-items {
   display: flex;
   align-items: center;
@@ -26,6 +34,10 @@ nav .nav-items {
   display: flex;
   align-items: center;
   margin: 0 16px;
+}
+
+.nav-item:hover {
+  text-decoration: underline;
 }
 
 .jumbotron {
@@ -73,6 +85,9 @@ main, .info-item {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+main {
   border-bottom: solid lightgray 1px;
 }
 
@@ -131,7 +146,19 @@ video {
 }
 
 footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   margin-left: 32px;
+}
+
+footer span {
+  margin-right: 20px;
+  color: gray;
+}
+
+footer span:hover {
+  text-decoration: underline;
 }
 
 @media only screen and (max-width: 730px) {
@@ -182,6 +209,10 @@ footer {
   }
 
   .main-thesis h2, .main-thesis p {
+    display: none;
+  }
+
+  footer span {
     display: none;
   }
 }
@@ -259,6 +290,7 @@ footer {
   .learning {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     flex-wrap: wrap;
     background-color: lightgray;
     padding-bottom: 32px;
@@ -278,7 +310,7 @@ footer {
     flex-direction: column;
     background-color: white;
     width: 30%;
-    margin: 0 0 20px 20px;
+    margin: 0 10px 20px 10px;
   }
 
   .learning-item img {
