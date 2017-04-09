@@ -1,0 +1,337 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
+nav .nav-items {
+  display: flex;
+  align-items: center;
+  margin-right: 4px;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  margin: 0 16px;
+}
+
+.jumbotron {
+  background-image: url('../images/banner.jpg');
+  background-size: cover;
+}
+
+.banner {
+  background-color: lightgray;
+  padding: 0 0 32px 0;
+  margin-bottom: 16px;
+}
+
+.banner-container {
+  margin: 0 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.banner-container h1 {
+  margin: 0 0 32px 0;
+}
+
+.banner-container p {
+  margin: 0 0 24px 0;
+}
+
+.banner-container span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: darkgray;
+  flex-grow: 1;
+  height: 48px;
+  width: 100%;
+  margin: 0;
+}
+
+.banner-container span a {
+  text-decoration: none;
+  color: white;
+}
+
+main, .info-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: solid lightgray 1px;
+}
+
+.info-item h2, .info-item p, .info-item a {
+  width: 90%;
+  margin: 0 0 12px 16px;
+  /*padding: 0 0 0 16px;*/
+}
+
+.info-item a {
+  text-decoration: none;
+  color: dodgerblue;
+  margin-bottom: 24px;
+}
+
+.info-item img {
+  margin-bottom: 16px;
+}
+
+.learning-item {
+  display: flex;
+}
+
+.learning {
+  width: 100%;
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+}
+
+.learning-item {
+  margin: 0 32px 10px 32px;
+  background-color: lightgray;
+}
+
+.learning-item h3 {
+  margin-left: 24px;
+}
+
+.learning div:last-child {
+  margin-bottom: 32px;
+}
+
+.learning h1 {
+  text-align: center;
+}
+
+.thesis {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+video {
+  width: 100%;
+}
+
+footer {
+  margin-left: 32px;
+}
+
+@media only screen and (max-width: 730px) {
+  nav div span {
+    display: none;
+  }
+
+  .info-item img {
+    width: 90%;
+  }
+
+  .info-item-text {
+    width: 90%;
+    margin-bottom: 24px;
+  }
+
+  .jumbotron {
+    height: 180px;
+    margin-bottom: 32px;
+  }
+
+  .jumbotron img {
+    display: none;
+  }
+
+  .nav-items div:nth-child(3) {
+    display: none;
+  }
+
+  footer {
+    margin: 0 32px 0 32px;
+  }
+
+  .main-info {
+    display: none;
+  }
+
+  .desktop-img {
+    display: none;
+  }
+
+  .learning-item img, .learning-item p {
+    display: none;
+  }
+
+  .thesis-items {
+    display: none;
+  }
+
+  .main-thesis h2, .main-thesis p {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 731px) {
+  .nav-item img {
+    display: none;
+  }
+
+  .banner {
+    display: flex;
+    padding-top: 32px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+  }
+
+  .jumbotron {
+    width: 60%;
+    margin-left: 32px;
+    background-image: url();
+  }
+
+  .jumbotron img {
+    width: 100%;
+  }
+
+  .banner-container {
+    margin-left: 40px;
+    justify-content: center;
+    margin-right: 32px;
+    width: 40%
+  }
+
+  .banner-container span {
+    flex-grow: 0;
+    background-color: gray;
+  }
+
+  .main-info {
+    width: 60%;
+    margin: 0 40px 0 32px;
+  }
+
+  .main-info img {
+    width: 100%;
+  }
+
+  .info {
+    display: flex;
+    margin-top: 32px;
+  }
+
+  .info-item {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .info-item-text {
+    flex-grow: 1;
+  }
+
+  .info-items {
+    width: 40%;
+  }
+
+  .info-item img {
+    width: 35%;
+  }
+
+  .mobile-img {
+    display: none;
+  }
+
+  .learning {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: lightgray;
+    padding-bottom: 32px;
+  }
+
+  .learning h1 {
+    width: 100%;
+    margin: 32px auto;
+  }
+
+  .learning-item p {
+    margin: 0 24px 10px 24px;
+  }
+
+  .learning-item {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 30%;
+    margin: 0 0 20px 20px;
+  }
+
+  .learning-item img {
+    width: 100%;
+    height: auto;
+  }
+
+  .thesis {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .thesis h1 {
+    width: 100%;
+    text-align: center;
+    margin: 32px auto;
+  }
+
+  .main-thesis {
+    width: 60%;
+    margin: 0 40px 0 32px;
+  }
+
+  .main-thesis video {
+    width: 100%;
+  }
+
+  .thesis-items {
+    width: 40%;
+  }
+
+  .thesis-item h2 {
+    margin-top: 0;
+  }
+
+  .thesis-item {
+    display: flex;
+    margin-bottom: 24px;
+    align-items: center;
+  }
+
+  .thesis-item img {
+    width: 35%;
+    height: 35%;
+    margin-right: 12px;
+  }
+
+  .thesis-title {
+    margin: 32px auto;
+  }
+
+  .learning div:last-child {
+    margin-bottom: 20px;
+  }
+}
